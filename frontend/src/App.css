@@ -1,0 +1,8 @@
+p,
+img {
+  user-select: none;
+}
+
+body {
+  background-color: darkslategrey;
+}

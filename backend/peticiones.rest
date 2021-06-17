@@ -1,0 +1,32 @@
+GET http://localhost:3000/items
+
+###
+
+POST http://localhost:3000/api/posts
+Content-Type: application/json
+
+{
+    "titulo": "prueba2",
+    "descripcion": "descripcion2",
+    "contenido": "Contenido2",
+    "categoria": "Categoria1",
+    "createdAt": "21:00"
+}
+
+###
+PUT http://localhost:3000/api/posts/6068f6ede1fad3016c76cc0a
+Content-Type: application/json
+
+{
+    "titulo": "prueba3",
+    "descripcion": "descripcion3",
+    "contenido": "Contenido3",
+    "categoria": "Categoria3",
+    "createdAt": "21:00"
+}
+
+###
+DELETE http://localhost:3000/api/posts/6068f6ede1fad3016c76cc0a
+
+###
+GET http://localhost:3000/api/categoria/prueba1
