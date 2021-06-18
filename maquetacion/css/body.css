@@ -1,0 +1,125 @@
+/* MAIN HEADER */
+h2,h4 {
+    margin: 5px;
+}
+
+p {
+    margin-top: 0;
+}
+
+.main-text {
+    width: 300px;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 2em;
+    margin-top: 2em;
+}
+
+/* SELECTS */
+#selects {
+    display: flex;
+    justify-content: space-around;
+}
+
+#select-products {
+    font-weight:800;
+}
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    outline: 0;
+    box-shadow: none;
+    border: 0 ;
+    background: var(--color-white);
+    background-image: none;
+}
+
+/* LIST */
+.products {
+    margin: auto;
+    margin-top: 1.5em;
+    transition: all .45s linear;
+}
+
+.container{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+.list {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    /* text-align: center; */
+    margin-top: 1.5em;
+}
+
+.list img {
+    width: 140px;
+    height: 140px;
+}
+
+.card {
+    width: 140px;
+}
+
+.heart-like{
+    display: flex;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border: 2px solid var(--color-white);
+    background-color: var(--color-white);
+    border-radius: 50%;
+    padding: .2em;
+}
+
+.heart-like:hover{
+    background-color: var(--color-red-white);
+    border: 2px solid var(--color-red-white);
+    cursor: pointer;
+}
+
+/* PAGINATION */
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+}
+
+.pagination a {
+    color: var(--color-grey);
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+
+@media only screen and (min-width: 768px) {
+    .products {
+        max-width: 77%;
+    }
+
+    .list {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .products {
+        max-width: 60%;
+    }
+
+    .list {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr .3fr;
+    }
+
+    
+}

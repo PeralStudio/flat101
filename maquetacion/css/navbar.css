@@ -1,0 +1,36 @@
+.navbar-container ul {
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    margin: 1.5em auto;
+}
+
+.navbar-container li {
+    font-size: 22px;
+    list-style: none;
+}
+
+.navbar-container li:nth-child(2) {
+    margin-left: 30%;
+}
+
+.navbar-container i {
+    color: var(--color-grey);
+}
+
+.navbar-container i:hover {
+    color: var(--color-blue);
+}
+
+
+@media only screen and (min-width: 768px) {
+    .navbar-container ul {
+        max-width: 83%;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .navbar-container ul {
+        max-width: 70%;
+    }
+}
