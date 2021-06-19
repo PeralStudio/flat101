@@ -16,7 +16,7 @@ p {
 }
 
 /* SELECTS */
-#selects {
+#div-selects {
     display: flex;
     justify-content: space-around;
 }
@@ -35,6 +35,7 @@ select {
     border: 0 ;
     background: var(--color-white);
     background-image: none;
+    cursor: pointer;
 }
 
 /* LIST */
@@ -45,9 +46,18 @@ select {
 }
 
 .container{
+    width: 140px;
     position: relative;
     display: inline-block;
     text-align: center;
+}
+
+.hide {
+display: none;
+}
+
+.show {
+display: block;
 }
 
 .list {
@@ -56,17 +66,12 @@ select {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     gap: 0px 0px;
-    /* text-align: center; */
     margin-top: 1.5em;
 }
 
 .list img {
     width: 140px;
     height: 140px;
-}
-
-.card {
-    width: 140px;
 }
 
 .heart-like{
@@ -99,7 +104,6 @@ select {
     padding: 8px 16px;
     text-decoration: none;
 }
-
 
 @media only screen and (min-width: 768px) {
     .products {

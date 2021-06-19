@@ -1,6 +1,6 @@
 import { toast } from 'react-toastify';
 
-export const notifyAdd = (name) => toast(`Añadido al carrito: ${name}`, {
+export const notifyAdd = (name) => toast(`✔ Añadido al carrito: ${name}`, {
     position: "top-right",
     autoClose: 3000,
     hideProgressBar: false,
@@ -12,7 +12,7 @@ export const notifyAdd = (name) => toast(`Añadido al carrito: ${name}`, {
 
 });
 
-export const notifyRemove = (name) => toast(`Eliminado del carrito: ${name}`, {
+export const notifyRemove = (name) => toast(`❌ Eliminado del carrito: ${name}`, {
     position: "top-right",
     autoClose: 3000,
     hideProgressBar: false,
