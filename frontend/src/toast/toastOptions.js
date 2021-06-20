@@ -9,7 +9,6 @@ export const notifyAdd = (name) => toast(`✔ Añadido al carrito: ${name}`, {
     draggable: true,
     progress: undefined,
     type: toast.TYPE.SUCCESS,
-
 });
 
 export const notifyRemove = (name) => toast(`❌ Eliminado del carrito: ${name}`, {
@@ -21,5 +20,15 @@ export const notifyRemove = (name) => toast(`❌ Eliminado del carrito: ${name}`
     draggable: true,
     progress: undefined,
     type: toast.TYPE.ERROR,
+});
 
+export const notifyEmptyCart = () => toast(`✔ Carrito Vaciado`, {
+    position: "top-right",
+    autoClose: 3000,
+    hideProgressBar: false,
+    closeOnClick: true,
+    pauseOnHover: true,
+    draggable: true,
+    progress: undefined,
+    type: toast.TYPE.DEFAULT,
 });
