@@ -66,7 +66,7 @@ display: block;
     display: grid;
     justify-items: center;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     gap: 0px 0px;
     margin-top: 1.5em;
 }
@@ -74,6 +74,18 @@ display: block;
 .list img {
     width: 140px;
     height: 140px;
+    transition: all 0.4s ease-out;
+}
+
+.container-img:hover img {
+    -webkit-transform:scale(1.1);
+    transform:scale(1.1);
+    transition: all 0.4s ease-out;
+    cursor: pointer;
+}
+
+.container-img {
+    overflow:hidden;
 }
 
 .heart-like{
@@ -125,6 +137,6 @@ display: block;
 
     .list {
         grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr .3fr;
+        grid-template-rows: 1fr 1fr .1fr;
     }
 }
