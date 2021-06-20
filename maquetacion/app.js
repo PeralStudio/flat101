@@ -21,7 +21,7 @@ const selectDiv = `
                 Plato ducha (${chaptersRemove2.length})
             </option>
     </select>
-    <select name="selectOrdenar" id="selectOrdenar">
+    <select name="selectOrdenar" id="select-sort">
         <option selected="selected">
             ORDENAR POR
         </option>
@@ -35,9 +35,9 @@ const selectDiv = `
 
 divSelect.innerHTML = selectDiv;
 
-const select = document.getElementById('select-products');
+const selectProducts = document.getElementById('select-products');
 
-select.addEventListener('change', e => {
+selectProducts.addEventListener('change', e => {
     filterSelection(e.target.value);
 
     function filterSelection(nameClass) {
