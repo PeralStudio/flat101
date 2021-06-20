@@ -36,7 +36,7 @@ select {
     background: var(--color-white);
     background-image: none;
     cursor: pointer;
-    background: transparent url(http://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png) no-repeat 100% center;
+    background: transparent url(https://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png) no-repeat 100% center;
     padding-right: 25px;
 }
 
