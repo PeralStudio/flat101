@@ -3,6 +3,7 @@ import './App.css';
 import Carrito from './components/Carrito';
 import Productos from './components/Productos';
 import { useLocalStorage } from './components/customHook/localStorage';
+import { notifyEmptyCart } from './toast/toastOptions';
 
 
 function App() {
@@ -31,6 +32,7 @@ function App() {
   const deleteProducts = () => {
     setProducts([]);
     setValueIdLS(0);
+    notifyEmptyCart();
   }
 
   return (
