@@ -4,6 +4,7 @@ import Tooltip from '@material-ui/core/Tooltip';
 import Zoom from '@material-ui/core/Zoom';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
+import { Helmet } from 'react-helmet';
 
 import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
 import Loader from "react-loader-spinner";
@@ -26,6 +27,9 @@ const Productos = ({ productoAñadir }) => {
 
     return (
         <>
+            <Helmet>
+                <title>Productos</title>
+            </Helmet>
             <div className="text-center mb-3">
                 <Tooltip title="Carrito" TransitionComponent={Zoom} arrow >
                     <Link to="/carrito" className="text-end"><Icon className="fas fa-shopping-cart"></Icon></Link>

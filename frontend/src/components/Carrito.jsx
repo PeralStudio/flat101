@@ -2,6 +2,7 @@ import { CommonDiv, CommonDiv2, CarritoDivVacio, TotalPrice, TitlePrice, PPrice,
 import Tooltip from '@material-ui/core/Tooltip';
 import Zoom from '@material-ui/core/Zoom';
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet';
 
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -15,6 +16,9 @@ const Carrito = ({ productos, productosEditados, deleteProducts }) => {
 
     return (
         <>
+            <Helmet>
+                <title>Carrito</title>
+            </Helmet>
             <div className="text-center mb-3">
                 <Tooltip title="Volver" TransitionComponent={Zoom} arrow >
                     <Link to="/" ><Icon className="fas fa-home"></Icon></Link>
