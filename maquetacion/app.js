@@ -1,5 +1,4 @@
 const divSelect = document.getElementById('div-selects');
-
 const existingElements = document.querySelectorAll(".container");
 
 const chapters = Array.from(existingElements).filter(chapter => chapter.classList.contains("container"));
@@ -68,3 +67,8 @@ selectProducts.addEventListener('change', e => {
         }
     }
 });
+
+const changeIcon = (x) => {
+    x.classList.toggle("fas");
+    x.classList.toggle("far");
+}
