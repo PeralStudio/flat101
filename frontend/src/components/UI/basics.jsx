@@ -15,6 +15,16 @@ export const CommonDiv = styled.div`
     box-shadow: 0 20px 30px #1d1c1c;
 `;
 
+export const CommonDiv2 = styled.div`
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    padding: 10px;
+    margin: 5px;
+    font-size: 10px;
+`;
+
 export const CardProductos = styled.div`
     text-align: center;
     width: 110px;
@@ -73,16 +83,6 @@ export const Select = styled.div`
     font-weight: bold;
     color: black;
     border-radius: 5px;
-`;
-
-export const CommonDiv2 = styled.div`
-    display: flex;
-    flex-wrap: wrap;
-    text-align: center;
-    justify-content: center;
-    padding: 10px;
-    margin: 5px;
-    font-size: 10px;
 `;
 
 export const TitlePrice = styled.p`
