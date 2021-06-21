@@ -88,6 +88,8 @@ display: block;
 }
 
 .container-img {
+    height: 140px;
+    margin-bottom: 5px;
     overflow:hidden;
 }
 
