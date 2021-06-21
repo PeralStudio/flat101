@@ -40,6 +40,10 @@ select {
     padding-right: 25px;
 }
 
+select:hover {
+    text-decoration: underline;
+}
+
 /* LIST */
 .products {
     margin: auto;
